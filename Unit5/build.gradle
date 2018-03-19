@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group 'edu.ip01g.unit5'
+version '1.0.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'unit5-objects',
+                   'Implementation-Version': version,
+                   'Main-Class': 'edu.ip01g.unit5.Unit5'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '5.+'
+}

@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group 'edu.ip01g.raffle'
+version '1.0.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Raffle',
+                   'Implementation-Version': version,
+                   'Main-Class': 'edu.ip01g.raffle.Raffle'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '5.+'
+}
