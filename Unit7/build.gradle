@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group 'edu.ip01g.unit8'
+version '1.0.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Unit 7',
+                   'Implementation-Version': version,
+                   'Main-Class': 'edu.ip01g.unit7.Exercise09Square'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '5.+'
+}
